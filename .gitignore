@@ -1,0 +1,22 @@
+# Build directories
+build/
+bin/
+*.o
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# IDE and OS generated files
+.vscode/ # If you use VS Code
+.DS_Store
+*.swp # Vim swap files
+*~    # Emacs backup files
+
+# Dependencies (if downloaded locally, e.g., SDL libs)
+# extern/
+# dependencies/
