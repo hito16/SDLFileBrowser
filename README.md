@@ -1,4 +1,5 @@
-# SDLFileBrowser: Select a file, pass the string file name on.
+# SDLFileBrowser: 
+Select a file, pass on the string file name 
 
 ## Project Overview
 
