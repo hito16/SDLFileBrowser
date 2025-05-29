@@ -1,15 +1,17 @@
-# SDLFileBrowser: 
-Select a file, pass on the string file name 
+# SDLFileBrowser 
+
 
 ## Project Overview
 
 `SDLFileBrowser` is a lightweight, cross-platform file selection interface.  Sometimes you just want to select file, and pass it into an existing program.
 
-
 ## Design
 The project targets small embedded systems and gaming consoles that may not support proper terminal/keyboard interaction, but do support a screen and a simple input device.  Often, existing code just needs a file name to run (ex. an image viewer, media player, etc).  This makes it simple to collect user input and move on.
 * include a simple library in your SDL app
-* SDL_Init(), SDL_CreateWindow(), SDL_CreateRenderer and SDL_Quit() are called outside this code (see the example)
+* your SDL app will handle SDL initilazation and cleanup
+   * SDL_Init(), SDL_CreateWindow(), SDL_CreateRenderer and SDL_Quit() must handled outside this code (see the example)
+   * the SDL_Init() bitmask specific to this file selection interface can be pulled from a static method
+   * The calling app will merge the bitmask other bitmasks when calling SDL_Init()
 
 
 ## Building the Project
